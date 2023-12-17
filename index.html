@@ -5,12 +5,185 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ITHub 2023 Olovyannikov IV</title>
+    <title>Coffee Landing - ITHub 2023 Olovyannikov IV</title>
+
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./css/index.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
 </head>
 <body>
-<header></header>
-<main></main>
-<footer></footer>
+<header class="header p-3 position-absolute start-0 top-0 end-0">
+    <div class="d-flex justify-content-between align-items-center">
+        <a href="#" class="text-decoration-none text-white fs-5 fw-bold">ITHub Coffee</a>
+        <div>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+<nav class="collapse navbar-collapse dropdown-nav" id="navbar">
+    <div class="dropdown-nav__container container-xxl d-flex align-items-start align-items-md-center">
+        <div class="row align-items-start">
+            <div class="col-12 col-sm-4 mt-4">
+                <a href="#" class="row text-decoration-none">
+                    <div class="col-2 col-sm-12 mb-4">
+                        <img src="./img/1-coffee-flavour.jpg" alt="Coffee Flavour" class="img-fluid" width="553" height="746" loading="lazy">
+                    </div>
+                    <div class="col-10">
+                        <h3>Каждый день мы обжариваем кофе</h3>
+                        <p>Все это время мы учимся новому, участвуем в чемпионатах и выставках, постоянно развиваемся.</p>
+                        <p>Узнать больше <i class="bi bi-arrow-right-short"></i></p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-4 mt-4">
+                <a href="#" class="row text-decoration-none">
+                    <div class="col-2 col-sm-12 mb-4">
+                        <img src="./img/2-health-benefits.jpg" alt="Coffe Flavour" class="img-fluid" width="555" height="746" loading="lazy">
+                    </div>
+                    <div class="col-10">
+                        <h3>Бесплатно доставляем по всей России</h3>
+                        <p>Производство и интернет-магазин
+                            свежеобжаренного кофе</p>
+                        <p>Узнать больше <i class="bi bi-arrow-right-short"></i></p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-4 mt-4">
+                <a href="#" class="row text-decoration-none">
+                    <div class="col-2 col-sm-12 mb-4">
+                        <img src="./img/3-essential-nutrients.jpg" alt="Coffe Flavour" class="img-fluid" width="555" height="746" loading="lazy">
+                    </div>
+                    <div class="col-10">
+                        <h3>Журнал о кофе</h3>
+                        <p>Мы публикуем полезные статьи о кофе и делимся накопленными знаниями</p>
+                        <p>Узнать больше <i class="bi bi-arrow-right-short"></i></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <button class="navbar-toggler dropdown-nav__closeNavBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+        </button>
+    </div>
+</nav>
+<section class="hero">
+    <div class="hero__overlay"></div>
+<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" loading="lazy" class="hero__video">
+        <source src="./video/video.mp4" type="video/mp4">
+    </video>
+    <div class="hero__content h-100 container-custom position-relative">
+        <div class="d-flex h-100 align-items-center hero__content-width">
+            <div class="text-white">
+                <h1 class="hero__heading fw-bold mb-4">Каждый день мы обжариваем кофе.</h1>
+                <p class="lead mb-4">Каждый год мы ездим в страны произрастания кофе, чтобы выбрать интересные лоты и привезти их в Россию, а сотрудничество со всеми крупнейшими импортерами кофе позволяет нам поддерживать большой ассортимент свежего урожая.</p>
+                <a href="#" class="mt-2 btn btn-lg btn-outline-light" role="button">Купить</a>
+            </div>
+        </div>
+    </div>
+    <a href="#scroll-down" class="hero__scroll-btn">
+        Узнать больше <i class="bi bi-arrow-down-short"></i>
+    </a>
+</section>
+<a id="scroll-down"></a>
+<section class="steps container-custom">
+    <div class="row">
+        <div class="col-12 col-sm-6 d-md-flex justify-content-md-ceneter">
+            <img src="img/1-coffee-flavour.jpg" alt="Coffe Flavour" class="img-fluid pb-4 steps__section-thumbnail" width="553" height="746" loading="lazy">
+        </div>
+        <div class="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
+            <div class="steps__content-width">
+                <span>01</span>
+                <h1 class="h2 mb-4">Жарим и отправляем кофе каждый день</h1>
+                <p class="mb-4">Жарим кофе семь дней в неделю, отправляем на следующий день после заказа, чтобы вы получали максимально свежий кофе.</p>
+                <a href="#">Узнать больше <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="steps steps--background">
+    <div class="container-custom">
+        <div class="row">
+            <div class="col-12 col-sm-6 d-md-flex justify-content-md-ceneter order-sm-1">
+                <img src="./img/2-health-benefits.jpg" alt="Health Benefits" class="img-fluid pb-4 steps__section-thumbnail" width="553" height="746" loading="lazy">
+            </div>
+            <div class="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
+                <div class="steps__content-width">
+                    <span>02</span>
+                    <h1 class="h2 mb-4">Обжариваем на лучшем
+                        в мире оборудовании</h1>
+                    <p class="mb-4">Мы поддерживаем микроклимат на складе для зеленого кофе, используем лучшие в мире ростеры Probat и Loring, проверяем каждую партию кофе лазерными колориметрами Colortrack. А после обжарки дополнительно очищаем с помощью специального оптического колорсортера Sovda.</p>
+                    <a href="#">Узнать больше <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="steps container-custom">
+    <div class="row">
+        <div class="col-12 col-sm-6 d-md-flex justify-content-md-ceneter">
+            <img src="./img/3-essential-nutrients.jpg" alt="Essential Nutrients" class="img-fluid pb-4 steps__section-thumbnail" width="553" height="746" loading="lazy">
+        </div>
+        <div class="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
+            <div class="steps__content-width">
+                <span>03</span>
+                <h1 class="h2 mb-4">Сильная команда</h1>
+                <p class="mb-4">В нашей команде Q-грейдеры, призеры чемпионатов, национальные судьи вкуса, сертифицированные SCA профессионалы (Roasting, Sensory, Green Coffee, Brewing, Barista).</p>
+                <a href="#">Узнать больше <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-dark text-white py-4">
+    <div class="container-custom my-4">
+        <div class="row">
+            <div class="col-12 col-sm-4 mb-4">
+                <img src="./img/article-1.jpeg" class="mb-4 object-fit-cover" alt="Описание статьи" width="441" height="248" loading="lazy">
+                <h3>КАК КЛИМАТ ПЛАНТАЦИИ ВЛИЯЕТ НА ВКУС КОФЕ</h3>
+                <p>Кофе — один из самых богатых напитков в мире по вкусовым качествам. Малейшие различия в терруаре, выращивании, обработке и приготовлении, придают ему разные вкусовые оттенки и ароматы. В этой статье рассказываем о влиянии климата и места произрастания на ягоду</p>
+            </div>
+            <div class="col-12 col-sm-4 mb-4">
+                <img src="./img/article-2.jpg" class="mb-4 object-fit-cover" alt="Описание статьи" width="441" height="248" loading="lazy">
+                <h3>КАК УСТРОЕНА ЯГОДА КОФЕ</h3>
+                <p>Кофейная ягода — это микросистема из нескольких слоёв: первый защищает от солнца, второй — от повреждений, третий — даёт питание. В этой статье рассказываем, что ещё есть внутри и для чего это нужно.</p>
+            </div>
+            <div class="col-12 col-sm-4 mb-4">
+                <img src="./img/article-3.jpg" class="mb-4 object-fit-cover" alt="Описание статьи" width="441" height="248" loading="lazy">
+                <h3>В ЧЁМ РАЗНИЦА МЕЖДУ АРАБИКОЙ И РОБУСТОЙ</h3>
+                <p>Арабика и робуста — два главных вида кофе. Они отличаются и внешне, и по вкусу. В этой статье разбираемся, в чём разница между арабикой и робустой</p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer bg-dark text-white">
+    <div class="container-custom d-flex justify-content-between align-items-center py-3 border-highlight">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="me-2 text-muted text-decoration-none">
+                <i class="bi bi-cup"></i>
+                <span>&copy; 2024 ITHubCoffee</span>
+            </a>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex text-white">
+            <li class="ms-3 "><a class="text-muted" href="#"><i class="bi bi-twitter"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-instagram"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-facebook"></i></a></li>
+        </ul>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
